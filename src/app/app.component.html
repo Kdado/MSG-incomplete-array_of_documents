@@ -1,0 +1,91 @@
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="text-center display-4 ">Milton Springers Gymnastics</h1>
+</div>
+
+<div class="container-md">
+    <router-outlet></router-outlet>
+</div>
+
+<!--displays information for the selected student-->
+<!-- <div class="card mx-auto studentInfo" *ngIf="showStudentsInfo" style="width: 24rem" >
+    <h3>Member Account Information</h3>
+    <p><b>Name:</b> {{selectedStudent.firstName}} {{selectedStudent.lastName}}</p>
+    <p><b>Parent Email:</b> {{selectedStudent.parentEmail}}</p>
+    <p><b>Parent Phone:</b> {{selectedStudent.phone}}</p>
+    <p><b>Number of cases in account:</b> {{selectedStudent.casesInAccount}}  
+        
+    <button class="btn btn-outline-info showHistory" (click)="showMyContainer=!showMyContainer">History</button></p> 
+
+    <div *ngIf='showMyContainer' class="card">
+        <section *ngFor ="let x of casesArray" >
+            <div *ngIf="selectedStudent.id === x.studID">
+                <hr>
+                <p><b>Chocolate Type: </b>{{x.choc}}</p>
+                <p><b>Quantity: </b>{{x.quan}}</p>
+                <p><b>Date: </b>{{x.date}}</p>
+            </div>
+           
+        </section>
+    </div> -->
+
+
+    <!-- <div class="card" matTooltip="Student already has 3 cases." [matTooltipDisabled]="!disableAddCaseButton">
+        <button  id="tooltip" class="btn btn-primary btn-lg"  (click)="showAddCaseSection()" [disabled]="disableAddCaseButton" mat-button type="button" >
+            Add Case 
+        </button> <br>
+    </div>
+   
+     -->
+    
+    <!--displays Add Case section if button in the code above is pressed-->
+    <!-- <div  *ngIf='displayAddCaseSection' id="addCase">
+        <br>
+        <div class="form-group">
+            <label class="font-weight-bold">Select type of chocolate:</label>
+            
+                <select  class="form-control" [(ngModel)]="inChocolateType" >
+                    <option value="Milk Chocolate">Milk Chocolate</option>
+                    <option value="Almond Chocolate">Almond Chocolate</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="font-weight-bold">Select quantity:</label>
+            
+                <select class="form-control" [(ngModel)]="inQuantity">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="font-weight-bold">Date:</label> 
+            <input class="form-control" [(ngModel)]="inDate" type="date">
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="addCase(selectedStudent.id)">Submit</button>
+        
+        
+        
+    </div>
+</div> <br> -->
+
+<!--Search section-->
+<!-- <div class="container text-centre">
+Search for Student: 
+<input type="text" [(ngModel)]="searchTerm" placeholder="Last Name"> <br><br>
+<section *ngFor="let student of studentList | studentFilter: searchTerm">
+    <b>{{student.firstName}} {{student.lastName}} </b> <br>
+    Parent Email: {{student.parentEmail}}
+    <div class="d-flex justify-content-end"> -->
+        <!--<button (click)="selectStudent(student.id)" class="btn btn-primary btn-sm">Select</button>-->
+    <!-- </div>
+    <hr>
+</section>
+</div> -->
+
+
+
+

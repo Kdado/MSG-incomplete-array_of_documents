@@ -1,0 +1,28 @@
+
+<div class="student-form" [formGroup]="studentForm">
+            <div class="form-floating mb-3" >
+                <input id="typeOfTransaction" [(ngModel)]="transType" type="hidden" formControlName="typeOfTransaction">
+                <mat-form-field appearence="fill"> 
+                    <mat-select formControlName="chocoType" placeholder="Chocolate Type">
+                        <mat-option value="Milk Chocolate">Milk Chocolate</mat-option>
+                        <mat-option value="Almond Chocolate">Almond Chocolate</mat-option>
+                    </mat-select>
+                </mat-form-field> 
+                <mat-form-field>
+
+                <mat-select formControlName="quantity" placeholder="Quantity">
+                        <mat-option value=1>1</mat-option>
+                        <mat-option value=2>2</mat-option>
+                        <mat-option value=3>3</mat-option>
+
+                 </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput formControlName="date"
+                        placeholder="Date" [(ngModel)]="inDate" type="date">
+                </mat-form-field>
+            </div>
+
+   <button (click)="submitForm()" class="btn btn-primary" type="submit" [disabled]="studentForm.invalid">Submit</button> 
+</div>
+
